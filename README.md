@@ -15,7 +15,7 @@ let time = 1;
 let people = dicArr.map(item => {return item.id});
 let arr = dicArr.map(item=>{return item.value});
 //input times to begin
-const startTimes = 1
+const startTimes = 100
 
 
 option = {
@@ -33,7 +33,7 @@ option = {
     }]
 };
 var timer = setInterval(function(){
-    if (time >= beginTimes){
+    if (time >= startTimes){
         clearInterval(timer)
     }else{
         for(let j = 0;j < dicArr.length; j ++){
@@ -58,5 +58,6 @@ var timer = setInterval(function(){
         time++
     }
 },30);
+
 
 ```
