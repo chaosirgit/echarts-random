@@ -2,7 +2,7 @@
 This is an echarts random finance code
 Copy the code to echarts example code area
 ```javascript
- function needA(arr,j){
+function needA(arr,j){
     return arr.filter(item => {
         return item.id !== j
     })
