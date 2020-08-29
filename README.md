@@ -15,7 +15,7 @@ let time = 1;
 let people = dicArr.map(item => {return item.id});
 let arr = dicArr.map(item=>{return item.value});
 //input times to begin
-const startTimes = 100
+const startTimes = 1
 
 
 option = {
