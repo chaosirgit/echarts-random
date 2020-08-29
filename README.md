@@ -20,12 +20,30 @@ const startTimes = 1
 
 option = {
     title:{text:"随机财富规律",subtext:time},
+    tooltip: {
+        trigger: 'axis',
+        axisPointer: {
+            type: 'cross',
+            label: {
+                backgroundColor: '#283b56'
+            }
+        },
+        formatter:'序号:{b0}<br/>金额:{c0}'
+    },
+    legend: {
+        data:['最新成交价', '预购队列']
+    },
     xAxis: {
+        name: '序号',
         type: 'category',
         data: people
     },
     yAxis: {
-        type: 'value'
+        name: '金额',
+        type: 'value',
+        axisLabel: {
+                formatter: '{value}'
+            }
     },
     series: [{
         data: arr,
@@ -58,6 +76,7 @@ var timer = setInterval(function(){
         time++
     }
 },30);
+
 
 
 ```
