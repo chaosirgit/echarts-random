@@ -32,7 +32,7 @@ option = {
     }]
 };
         var timer = setInterval(function(){
-                if (time >= 1){
+                if (time >= 10000){
                     clearInterval(timer)
                 }else{
                                     for(let j = 0;j < dicArr.length; j ++){
